@@ -33,7 +33,7 @@ public class DeathAnimation : MonoBehaviour
         }
     }
 
-    private void DisablePhysics()
+    public void DisablePhysics()
     {
         Collider2D[] colliders = GetComponents<Collider2D>();
 
