@@ -12,16 +12,19 @@ public class Slime : MonoBehaviour
     [SerializeField] Transform firePos;
     [SerializeField] GameObject bullet;
     private Animator anim;
+    private SpriteRenderer sprite;
     // Start is called before the first frame update
     void Start()
     {
         target = GameObject.FindWithTag("Player").transform;
         anim = GetComponent<Animator>();
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        rotation();
         if (searchPlayer())
         {
             shoot();
@@ -52,6 +55,19 @@ public class Slime : MonoBehaviour
         {
             bulletPre();
             time = 0;
+        }
+    }
+
+    void rotation()
+    {
+        Vector2 angle = target.position - transform.position;
+        if(angle.x > 0f)
+        {
+            sprite.flipX = true;
+        }
+        if(angle.x < 0f)
+        {
+            sprite.flipX = false;
         }
     }
 
