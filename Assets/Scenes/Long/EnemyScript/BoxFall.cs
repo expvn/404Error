@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BoxFall : MonoBehaviour
+public class BoxFall : DeathPlayer
 {
     public LayerMask mask;
     public float range;
@@ -24,5 +24,10 @@ public class BoxFall : MonoBehaviour
             rb.gravityScale = garity;
             Debug.Log("Hit");
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        base.OnTriggerEnter2D(collision);
     }
 }

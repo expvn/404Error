@@ -2427,7 +2427,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.5, y: 6.5, z: -10}
+  m_LocalPosition: {x: 191.1, y: 5.7, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3901,7 +3901,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 742341783}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 406b98feba8fc5d4991b3f844d1ff986, type: 3}
   m_Name: 
@@ -11823,11 +11823,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 481021467160599389, guid: d83a5e7863a8afc4faee91819fff1fa7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.4
+      value: 190.2
       objectReference: {fileID: 0}
     - target: {fileID: 481021467160599389, guid: d83a5e7863a8afc4faee91819fff1fa7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.7
+      value: 6.3
       objectReference: {fileID: 0}
     - target: {fileID: 481021467160599389, guid: d83a5e7863a8afc4faee91819fff1fa7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12007,6 +12007,14 @@ PrefabInstance:
       propertyPath: castle
       value: 
       objectReference: {fileID: 1768761168}
+    - target: {fileID: 2938452933781992828, guid: 0321727fc4f2a09458753c8f9f0ac24d, type: 3}
+      propertyPath: nextStage
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2938452933781992828, guid: 0321727fc4f2a09458753c8f9f0ac24d, type: 3}
+      propertyPath: nextWorld
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

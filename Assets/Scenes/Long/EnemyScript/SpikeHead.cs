@@ -68,7 +68,7 @@ public class SpikeHead : DeathPlayer
         destitation = transform.position;
     }
 
-    private  void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         base.OnTriggerEnter2D(collision);
         Stopped();
