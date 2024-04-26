@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 
-public class SpikeHead : MonoBehaviour
+public class SpikeHead : DeathPlayer
 {
     [SerializeField] float speed;
     [SerializeField] float range;
@@ -68,12 +68,9 @@ public class SpikeHead : MonoBehaviour
         destitation = transform.position;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private  void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
-        {
-            Destroy(collision.gameObject);
-        }
+        base.OnTriggerEnter2D(collision);
         Stopped();
     }
 }

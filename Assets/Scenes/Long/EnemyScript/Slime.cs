@@ -38,6 +38,7 @@ public class Slime : MonoBehaviour
 
     bool searchPlayer()
     {
+        Debug.Log(Vector2.Distance(target.position, transform.position));
         if (Vector2.Distance(target.position, transform.position) <= distance)
         {
             isAttack = true;
