@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Long/1-11.unity
     guid: 43d9e5b4e8548c2409eedcf71f17ba35
+  - enabled: 1
+    path: Assets/Scenes/Long/2-11.unity
+    guid: ad4baabdef687364baf3aaa61ea6d232
   m_configObjects: {}
